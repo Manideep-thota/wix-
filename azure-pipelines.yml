@@ -1,6 +1,6 @@
 # The name provides the BuildNumber variable value. Update this to have the correct major, minor, and hotfix numbers.
 # Keep the $(rev:.r) as this provides the incremental build number.
-name: 1.0.0$(rev:.r)
+name: 1.3.0$(rev:.r)
 
 # By default, trigger a build for any changes in the 'main' branch and any branch matching 'enhancements/*' except for changes to the docs folder or the readme file
 trigger:
@@ -12,6 +12,7 @@ trigger:
     exclude:
       - docs/*
       - README.md
+      - readme.adoc
 
 pr:
   branches:
@@ -21,6 +22,7 @@ pr:
     exclude:
       - docs/*
       - README.md
+      - readme.adoc
 
 parameters:
   - name: ForceNewBaseline
@@ -36,13 +38,15 @@ variables:
   value: '**/*.sln'
 # This should be updated to the appropriate solution platform. Typically this will be one of: 'Any CPU', 'x64', or 'x86'
 - name: 'buildPlatform'
-  value: 'Any CPU'
+  value: 'x64'
 - name: 'buildConfiguration'
   value: 'Release'
 - name: JFrogBuildName
   value: 'madison-site-$(Build.DefinitionName)'
 - name: BQC.ForceNewBaseline
   value: ${{parameters.ForceNewBaseline}}
+- name: hasTests
+  value: false
 
 stages:
   - stage: BuildStage
@@ -76,6 +80,7 @@ stages:
           version: '7.x'
 
       - task: VisualStudioTestPlatformInstaller@1
+        condition: and(succeeded(), eq(variables.hasTests, true))
         displayName: 'Install latest stable Visual Studio Test Platform'
         inputs:
           packageFeedSelector: 'nugetOrg'
@@ -124,6 +129,7 @@ stages:
 
       # Remove the next 2 tasks if there are no unit tests
       - task: VSTest@3
+        condition: and(succeeded(), eq(variables.hasTests, true))
         displayName: 'VsTest - testAssemblies'
         inputs:
           testSelector: 'testAssemblies'
@@ -142,6 +148,7 @@ stages:
           configuration: '$(buildConfiguration)'
 
       - task: PublishCodeCoverageResults@2
+        condition: and(succeeded(), eq(variables.hasTests, true))
         displayName: Publish code coverage
         inputs:
           summaryFileLocation: $(Common.TestResultsDirectory)/**/*.cobertura.xml
@@ -151,7 +158,6 @@ stages:
         inputs:
           SearchPattern: |
             **/bin/**/*.pdb
-            ./$(buildConfiguration)/**/*.pdb # remove this line if there are no Win32 C++ projects
             ./x64/$(buildConfiguration)/**/*.pdb # remove this line if there are no x64 C++ projects
           IndexSources: false
           SymbolServerType: 'TeamServices'
@@ -162,7 +168,7 @@ stages:
           checkWarnings: true
           warningFailOption: 'build'
           showStatistics: true
-          checkCoverage: true # Set to false if there are no unit tests
+          checkCoverage: $(hasTests)
           coverageFailOption: 'build'
           coverageType: 'lines'
           coveragePrecision: '1'
@@ -222,10 +228,10 @@ stages:
                 }
               ]
             }
-          replaceSpecVars: false
           collectBuildInfo: true
           buildName: '$(JFrogBuildName)'
           buildNumber: '$(Build.BuildNumber)'
+          module: 'Binaries'
           failNoOp: true
 
       # Uncomment the next 3 tasks if this build has installers to publish
@@ -253,11 +259,11 @@ stages:
       #           }
       #         ]
       #       }
-      #     replaceSpecVars: false
       #     collectBuildInfo: true
       #     buildName: '$(JFrogBuildName)'
       #     buildNumber: '$(Build.BuildNumber)'
       #     failNoOp: true
+      #     module: 'Installers'
 
       # - task: PublishPipelineArtifact@1
       #   displayName: 'Publish Pipeline Artifact: Installers'
@@ -267,6 +273,7 @@ stages:
       #     publishLocation: 'pipeline'
 
       - task: JFrogPublishBuildInfo@1
+        condition: succeededOrFailed()
         displayName: 'Publish build info to JFrog Artifactory'
         inputs:
           artifactoryConnection: 'Thermo Fisher JFrog Artifactory'

@@ -1,0 +1,37 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+
+  <!-- Override any projects that tried to reset the warning level, etc. -->
+  <PropertyGroup Condition="'$(MSBuildProjectExtension)' != '.vcxproj'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel Condition="'$(WarningLevel)' != '' AND $(WarningLevel) &lt; 4">4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup  Condition="'$(MSBuildProjectExtension)' == '.vcxproj'">
+    <ClCompile Update="@(ClCompile)">
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+  </ItemGroup>
+
+  <!--
+    As a way to shortcut including code signing and source link, we are referencing them here using floating versioning
+    for projects that can support that (e.g. not .vcxproj and not projects with packages.config and no PackageReference
+    items).
+  -->
+  <ItemGroup Condition="'$(MSBuildProjectExtension)' != '.vcxproj' AND (!Exists('$(MSBuildProjectDirectory)\packages.config') OR '@(PackageReference)' != '')">
+    <!-- Include GitHub source link NuGet if we are in a Git repo -->
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="*" Condition="'$(RepositoryType)' == 'git'">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+
+    <!-- Include the code signing NuGet unless this is a test project -->
+    <PackageReference Include="Thermo.SignOutput" Version="*" Condition="'$(IsTestProject)' != 'true'">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
