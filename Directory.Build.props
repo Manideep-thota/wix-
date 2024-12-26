@@ -1,0 +1,46 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Define the company, etc. properties for all projects in a common location. Easier to update in the future. -->
+  <PropertyGroup>
+    <Company>Thermo Fisher Scientific, Inc.</Company>
+    <Product>Tf.CmApi Library</Product>
+
+    <Authors>$(Company.Replace(",",""))</Authors>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <!-- Set default values for .NET projects for warnings as errors. Do not explicitly set WarningLevel as that may defeat the defaults for SDK-style projects. -->
+  <PropertyGroup Condition="'$(MSBuildProjectExtension)' != '.vcxproj'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <!-- Establish default values for SDL checks, warning level, and warnings as errors. Disable warnings for external headers by default as well. -->
+  <ItemDefinitionGroup Condition="'$(MSBuildProjectExtension)' == '.vcxproj'">
+    <ClCompile>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <ItemDefinitionGroup Condition=" '$(DefineExplicitDefaults)' == 'true' ">
+    <Resource>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemDefinitionGroup>
+
+  <ItemGroup Condition=" '$(EnableDefaultItems)' == 'true' ">
+    <Resource Include="**/*.png;**/*.bmp;**/*.jpg;**/*.dds;**/*.tif;**/*.tga;**/*.gif;**/*.ttf;**/*.fx.ps;**/*.ico;**/*.cur"
+             Exclude="$(DefaultItemExcludes);$(DefaultExcludesInProjectFolder)" />
+    <None Remove="**/*.png;**/*.bmp;**/*.jpg;**/*.dds;**/*.tif;**/*.tga;**/*.gif;**/*.ttf;**/*.fx.ps;**/*.ico;**/*.cur"
+          Condition="'$(EnableDefaultNoneItems)' == 'true'" />
+
+    <Content Include="**/*.fx"
+             Exclude="$(DefaultItemExcludes);$(DefaultExcludesInProjectFolder)" />
+    <None Remove="**/*.fx"
+          Condition="'$(EnableDefaultNoneItems)' == 'true'" />
+  </ItemGroup>
+
+</Project>

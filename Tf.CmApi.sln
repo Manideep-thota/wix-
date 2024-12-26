@@ -1,0 +1,429 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{73A8027E-0703-4DD0-9D14-26D480EA2B49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7BE7D569-8B6E-4EE5-BEBE-5FE2FD07B4F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi", "src\Tf.CmApi\Tf.CmApi.csproj", "{61F281DA-6A77-41BE-8225-7B5553B28F08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Common", "src\Tf.CmApi.Common\Tf.CmApi.Common.csproj", "{E337D131-10B1-4DC8-B8C7-61F3D3AA2804}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Plugins.NicoletUsb", "src\Tf.CmApi.Plugins.NicoletUsb\Tf.CmApi.Plugins.NicoletUsb.csproj", "{C7C5334E-1FE0-4C52-AB6C-99D4B0074DF1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Plugins.NicoletUsb.Test", "test\Tf.CmApi.Plugins.NicoletUsb.Test\Tf.CmApi.Plugins.NicoletUsb.Test.csproj", "{64A2F4F6-7364-4C8D-A71B-75DF1E5BBCAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Test", "test\Tf.CmApi.Test\Tf.CmApi.Test.csproj", "{8B18E2BD-E633-43B2-BEB7-74EA0EC8D404}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Common.Test", "test\Tf.CmApi.Common.Test\Tf.CmApi.Common.Test.csproj", "{871093C3-1E75-4BED-8989-727B564EFDD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Usb.Win", "src\Tf.CmApi.Usb.Win\Tf.CmApi.Usb.Win.csproj", "{908CD04A-3330-4EBE-8823-FFFD4809B4B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Usb.Win.Test", "test\Tf.CmApi.Usb.Win.Test\Tf.CmApi.Usb.Win.Test.csproj", "{4B4F2716-77CC-4430-BCD8-961BEE849ABF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.DataProcessors", "src\Tf.CmApi.DataProcessors\Tf.CmApi.DataProcessors.csproj", "{4AC749AF-8E06-43E0-B815-BC1FF560BFC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Models", "src\Tf.CmApi.Models\Tf.CmApi.Models.csproj", "{B74D84E4-E9B1-4087-8D8F-1793C12B6A03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Plugins.Simulator", "src\Tf.CmApi.Plugins.Simulator\Tf.CmApi.Plugins.Simulator.csproj", "{0CBC7E65-3933-49F7-B4BC-B16B130D6E03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Usb.Common", "src\Tf.CmApi.Usb.Common\Tf.CmApi.Usb.Common.csproj", "{0FFE3579-CF57-46D2-897E-BC3C83C276D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Plugins.Simulator.Test", "test\Tf.CmApi.Plugins.Simulator.Test\Tf.CmApi.Plugins.Simulator.Test.csproj", "{864FB438-E67F-4F4C-B0B3-77DBFF6AF160}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.DeviceOverrides", "src\Tf.CmApi.DeviceOverrides\Tf.CmApi.DeviceOverrides.csproj", "{58ADC8DE-C983-42AA-BAA6-22F5CDFAB501}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Integration", "test\Tf.CmApi.Integration\Tf.CmApi.Integration.csproj", "{D12CE1AC-43FD-46C2-B8D1-48909E785E32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.SimpleSample", "test\Tf.CmApi.SimpleSample\Tf.CmApi.SimpleSample.csproj", "{005EF751-FDB2-4C73-87A8-4957D0F1873D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.SimpleSampleRef", "test\Tf.CmApi.SimpleSampleRef\Tf.CmApi.SimpleSampleRef.csproj", "{79A9F792-6756-4B61-BA7B-B0536EC69296}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.SimpleSampleRef_LegacyFramework", "test\Tf.CmApi.SimpleSampleRef_LegacyFramework\Tf.CmApi.SimpleSampleRef_LegacyFramework.csproj", "{88DCE4C6-8704-40CE-AEA0-5B44EE4C94E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Test.Utilities", "test\Tf.CmApi.Test.Utilities\Tf.CmApi.Test.Utilities.csproj", "{7F1DFC61-8335-4163-88B9-BDD1BA19EF34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.DownloadFirmware", "Tools\Tf.CmApi.DownloadFirmware\Tf.CmApi.DownloadFirmware.csproj", "{4E637F7C-7CCE-412F-B3AD-EDE6953D2096}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{E5989389-A1CA-419C-B067-66C3EF68FCED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RebootThermoInstrumentOBC", "Tools\RebootThermoInstrumentOBC\RebootThermoInstrumentOBC.csproj", "{721D652D-1204-4A45-B4EC-95379E10FC90}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "OBC Utilities Installer", "Installers\OBC Utilities Installer\OBC Utilities Installer.wixproj", "{485B1576-60BE-4D53-8FAF-AE5B2DDD617A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B3E1300-992D-46EB-AC79-6BEDDB5DCB96}"
+	ProjectSection(SolutionItems) = preProject
+		CodeCoverage.runsettings = CodeCoverage.runsettings
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SetIrSourceDAC", "Tools\SetIrSourceDAC\SetIrSourceDAC.csproj", "{953F8254-2DC3-471A-800B-5226155F76A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.DataProcessors.Test", "test\Tf.CmApi.DataProcessors.Test\Tf.CmApi.DataProcessors.Test.csproj", "{15BA67A9-266E-4F73-8E93-EC37A35FF7EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.DeviceOverrides.Test", "test\Tf.CmApi.DeviceOverrides.Test\Tf.CmApi.DeviceOverrides.Test.csproj", "{542AF718-A235-41B0-B844-5209CA47977D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.Usb.Common.Test", "test\Tf.CmApi.Usb.Common.Test\Tf.CmApi.Usb.Common.Test.csproj", "{3BA077B3-EBD7-461C-89AA-9E32755B431C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveDataForSimulator", "Tools\SaveDataForSimulator\SaveDataForSimulator.csproj", "{F82726A6-8CAC-41A6-9582-B096133569D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf.CmApi.TestEventRing", "test\Tf.CmApi.TestEventRing\Tf.CmApi.TestEventRing.csproj", "{2DB3DED2-CF01-4CD9-9A74-329A34DF120F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostBIM", "Tools\PostBIM\PostBIM.csproj", "{AC667338-BBA9-40C6-B44C-CB5184FCAE58}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "SimulatorData", "Installers\SimulatorData\SimulatorData.wixproj", "{B6956B15-6A55-446C-A9E6-F0ECB69DFC54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installers", "Installers", "{321B4EEC-9AC0-43E5-A2B5-B7BAC6A5CB9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug with Installers|Any CPU = Debug with Installers|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61F281DA-6A77-41BE-8225-7B5553B28F08}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F281DA-6A77-41BE-8225-7B5553B28F08}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{61F281DA-6A77-41BE-8225-7B5553B28F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F281DA-6A77-41BE-8225-7B5553B28F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F281DA-6A77-41BE-8225-7B5553B28F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F281DA-6A77-41BE-8225-7B5553B28F08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E337D131-10B1-4DC8-B8C7-61F3D3AA2804}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{E337D131-10B1-4DC8-B8C7-61F3D3AA2804}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{E337D131-10B1-4DC8-B8C7-61F3D3AA2804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E337D131-10B1-4DC8-B8C7-61F3D3AA2804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E337D131-10B1-4DC8-B8C7-61F3D3AA2804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E337D131-10B1-4DC8-B8C7-61F3D3AA2804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7C5334E-1FE0-4C52-AB6C-99D4B0074DF1}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C5334E-1FE0-4C52-AB6C-99D4B0074DF1}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{C7C5334E-1FE0-4C52-AB6C-99D4B0074DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C5334E-1FE0-4C52-AB6C-99D4B0074DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C5334E-1FE0-4C52-AB6C-99D4B0074DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C5334E-1FE0-4C52-AB6C-99D4B0074DF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A2F4F6-7364-4C8D-A71B-75DF1E5BBCAD}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A2F4F6-7364-4C8D-A71B-75DF1E5BBCAD}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{64A2F4F6-7364-4C8D-A71B-75DF1E5BBCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A2F4F6-7364-4C8D-A71B-75DF1E5BBCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A2F4F6-7364-4C8D-A71B-75DF1E5BBCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A2F4F6-7364-4C8D-A71B-75DF1E5BBCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B18E2BD-E633-43B2-BEB7-74EA0EC8D404}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B18E2BD-E633-43B2-BEB7-74EA0EC8D404}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{8B18E2BD-E633-43B2-BEB7-74EA0EC8D404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B18E2BD-E633-43B2-BEB7-74EA0EC8D404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B18E2BD-E633-43B2-BEB7-74EA0EC8D404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B18E2BD-E633-43B2-BEB7-74EA0EC8D404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{871093C3-1E75-4BED-8989-727B564EFDD4}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{871093C3-1E75-4BED-8989-727B564EFDD4}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{871093C3-1E75-4BED-8989-727B564EFDD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871093C3-1E75-4BED-8989-727B564EFDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871093C3-1E75-4BED-8989-727B564EFDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871093C3-1E75-4BED-8989-727B564EFDD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{908CD04A-3330-4EBE-8823-FFFD4809B4B9}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{908CD04A-3330-4EBE-8823-FFFD4809B4B9}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{908CD04A-3330-4EBE-8823-FFFD4809B4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908CD04A-3330-4EBE-8823-FFFD4809B4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908CD04A-3330-4EBE-8823-FFFD4809B4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908CD04A-3330-4EBE-8823-FFFD4809B4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B4F2716-77CC-4430-BCD8-961BEE849ABF}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4F2716-77CC-4430-BCD8-961BEE849ABF}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{4B4F2716-77CC-4430-BCD8-961BEE849ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4F2716-77CC-4430-BCD8-961BEE849ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4F2716-77CC-4430-BCD8-961BEE849ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4F2716-77CC-4430-BCD8-961BEE849ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC749AF-8E06-43E0-B815-BC1FF560BFC5}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC749AF-8E06-43E0-B815-BC1FF560BFC5}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{4AC749AF-8E06-43E0-B815-BC1FF560BFC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC749AF-8E06-43E0-B815-BC1FF560BFC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC749AF-8E06-43E0-B815-BC1FF560BFC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC749AF-8E06-43E0-B815-BC1FF560BFC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B74D84E4-E9B1-4087-8D8F-1793C12B6A03}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74D84E4-E9B1-4087-8D8F-1793C12B6A03}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{B74D84E4-E9B1-4087-8D8F-1793C12B6A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74D84E4-E9B1-4087-8D8F-1793C12B6A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B74D84E4-E9B1-4087-8D8F-1793C12B6A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B74D84E4-E9B1-4087-8D8F-1793C12B6A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CBC7E65-3933-49F7-B4BC-B16B130D6E03}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CBC7E65-3933-49F7-B4BC-B16B130D6E03}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{0CBC7E65-3933-49F7-B4BC-B16B130D6E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CBC7E65-3933-49F7-B4BC-B16B130D6E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CBC7E65-3933-49F7-B4BC-B16B130D6E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CBC7E65-3933-49F7-B4BC-B16B130D6E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FFE3579-CF57-46D2-897E-BC3C83C276D4}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFE3579-CF57-46D2-897E-BC3C83C276D4}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{0FFE3579-CF57-46D2-897E-BC3C83C276D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFE3579-CF57-46D2-897E-BC3C83C276D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FFE3579-CF57-46D2-897E-BC3C83C276D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FFE3579-CF57-46D2-897E-BC3C83C276D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864FB438-E67F-4F4C-B0B3-77DBFF6AF160}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{864FB438-E67F-4F4C-B0B3-77DBFF6AF160}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{864FB438-E67F-4F4C-B0B3-77DBFF6AF160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864FB438-E67F-4F4C-B0B3-77DBFF6AF160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864FB438-E67F-4F4C-B0B3-77DBFF6AF160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864FB438-E67F-4F4C-B0B3-77DBFF6AF160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58ADC8DE-C983-42AA-BAA6-22F5CDFAB501}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{58ADC8DE-C983-42AA-BAA6-22F5CDFAB501}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{58ADC8DE-C983-42AA-BAA6-22F5CDFAB501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58ADC8DE-C983-42AA-BAA6-22F5CDFAB501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58ADC8DE-C983-42AA-BAA6-22F5CDFAB501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58ADC8DE-C983-42AA-BAA6-22F5CDFAB501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D12CE1AC-43FD-46C2-B8D1-48909E785E32}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{D12CE1AC-43FD-46C2-B8D1-48909E785E32}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{D12CE1AC-43FD-46C2-B8D1-48909E785E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D12CE1AC-43FD-46C2-B8D1-48909E785E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D12CE1AC-43FD-46C2-B8D1-48909E785E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D12CE1AC-43FD-46C2-B8D1-48909E785E32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{005EF751-FDB2-4C73-87A8-4957D0F1873D}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{005EF751-FDB2-4C73-87A8-4957D0F1873D}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{005EF751-FDB2-4C73-87A8-4957D0F1873D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005EF751-FDB2-4C73-87A8-4957D0F1873D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005EF751-FDB2-4C73-87A8-4957D0F1873D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005EF751-FDB2-4C73-87A8-4957D0F1873D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79A9F792-6756-4B61-BA7B-B0536EC69296}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A9F792-6756-4B61-BA7B-B0536EC69296}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{79A9F792-6756-4B61-BA7B-B0536EC69296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A9F792-6756-4B61-BA7B-B0536EC69296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A9F792-6756-4B61-BA7B-B0536EC69296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A9F792-6756-4B61-BA7B-B0536EC69296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DCE4C6-8704-40CE-AEA0-5B44EE4C94E2}.Debug with Installers|Any CPU.ActiveCfg = Debug|x64
+		{88DCE4C6-8704-40CE-AEA0-5B44EE4C94E2}.Debug with Installers|Any CPU.Build.0 = Debug|x64
+		{88DCE4C6-8704-40CE-AEA0-5B44EE4C94E2}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{88DCE4C6-8704-40CE-AEA0-5B44EE4C94E2}.Debug|Any CPU.Build.0 = Debug|x64
+		{88DCE4C6-8704-40CE-AEA0-5B44EE4C94E2}.Release|Any CPU.ActiveCfg = Release|x64
+		{88DCE4C6-8704-40CE-AEA0-5B44EE4C94E2}.Release|Any CPU.Build.0 = Release|x64
+		{7F1DFC61-8335-4163-88B9-BDD1BA19EF34}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F1DFC61-8335-4163-88B9-BDD1BA19EF34}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{7F1DFC61-8335-4163-88B9-BDD1BA19EF34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F1DFC61-8335-4163-88B9-BDD1BA19EF34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F1DFC61-8335-4163-88B9-BDD1BA19EF34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F1DFC61-8335-4163-88B9-BDD1BA19EF34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E637F7C-7CCE-412F-B3AD-EDE6953D2096}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E637F7C-7CCE-412F-B3AD-EDE6953D2096}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{4E637F7C-7CCE-412F-B3AD-EDE6953D2096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E637F7C-7CCE-412F-B3AD-EDE6953D2096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E637F7C-7CCE-412F-B3AD-EDE6953D2096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E637F7C-7CCE-412F-B3AD-EDE6953D2096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{721D652D-1204-4A45-B4EC-95379E10FC90}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{721D652D-1204-4A45-B4EC-95379E10FC90}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{721D652D-1204-4A45-B4EC-95379E10FC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721D652D-1204-4A45-B4EC-95379E10FC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721D652D-1204-4A45-B4EC-95379E10FC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721D652D-1204-4A45-B4EC-95379E10FC90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{485B1576-60BE-4D53-8FAF-AE5B2DDD617A}.Debug with Installers|Any CPU.ActiveCfg = Debug|x64
+		{485B1576-60BE-4D53-8FAF-AE5B2DDD617A}.Debug with Installers|Any CPU.Build.0 = Debug|x64
+		{485B1576-60BE-4D53-8FAF-AE5B2DDD617A}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{485B1576-60BE-4D53-8FAF-AE5B2DDD617A}.Release|Any CPU.ActiveCfg = Release|x64
+		{485B1576-60BE-4D53-8FAF-AE5B2DDD617A}.Release|Any CPU.Build.0 = Release|x64
+		{953F8254-2DC3-471A-800B-5226155F76A2}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{953F8254-2DC3-471A-800B-5226155F76A2}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{953F8254-2DC3-471A-800B-5226155F76A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953F8254-2DC3-471A-800B-5226155F76A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953F8254-2DC3-471A-800B-5226155F76A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953F8254-2DC3-471A-800B-5226155F76A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15BA67A9-266E-4F73-8E93-EC37A35FF7EA}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BA67A9-266E-4F73-8E93-EC37A35FF7EA}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{15BA67A9-266E-4F73-8E93-EC37A35FF7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BA67A9-266E-4F73-8E93-EC37A35FF7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15BA67A9-266E-4F73-8E93-EC37A35FF7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15BA67A9-266E-4F73-8E93-EC37A35FF7EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542AF718-A235-41B0-B844-5209CA47977D}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{542AF718-A235-41B0-B844-5209CA47977D}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{542AF718-A235-41B0-B844-5209CA47977D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542AF718-A235-41B0-B844-5209CA47977D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542AF718-A235-41B0-B844-5209CA47977D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542AF718-A235-41B0-B844-5209CA47977D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA077B3-EBD7-461C-89AA-9E32755B431C}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA077B3-EBD7-461C-89AA-9E32755B431C}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{3BA077B3-EBD7-461C-89AA-9E32755B431C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA077B3-EBD7-461C-89AA-9E32755B431C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA077B3-EBD7-461C-89AA-9E32755B431C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA077B3-EBD7-461C-89AA-9E32755B431C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82726A6-8CAC-41A6-9582-B096133569D5}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82726A6-8CAC-41A6-9582-B096133569D5}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{F82726A6-8CAC-41A6-9582-B096133569D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82726A6-8CAC-41A6-9582-B096133569D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82726A6-8CAC-41A6-9582-B096133569D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82726A6-8CAC-41A6-9582-B096133569D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB3DED2-CF01-4CD9-9A74-329A34DF120F}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB3DED2-CF01-4CD9-9A74-329A34DF120F}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{2DB3DED2-CF01-4CD9-9A74-329A34DF120F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB3DED2-CF01-4CD9-9A74-329A34DF120F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB3DED2-CF01-4CD9-9A74-329A34DF120F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB3DED2-CF01-4CD9-9A74-329A34DF120F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC667338-BBA9-40C6-B44C-CB5184FCAE58}.Debug with Installers|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC667338-BBA9-40C6-B44C-CB5184FCAE58}.Debug with Installers|Any CPU.Build.0 = Debug|Any CPU
+		{AC667338-BBA9-40C6-B44C-CB5184FCAE58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC667338-BBA9-40C6-B44C-CB5184FCAE58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC667338-BBA9-40C6-B44C-CB5184FCAE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC667338-BBA9-40C6-B44C-CB5184FCAE58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6956B15-6A55-446C-A9E6-F0ECB69DFC54}.Debug with Installers|Any CPU.ActiveCfg = Debug|x64
+		{B6956B15-6A55-446C-A9E6-F0ECB69DFC54}.Debug with Installers|Any CPU.Build.0 = Debug|x64
+		{B6956B15-6A55-446C-A9E6-F0ECB69DFC54}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{B6956B15-6A55-446C-A9E6-F0ECB69DFC54}.Release|Any CPU.ActiveCfg = Release|x64
+		{B6956B15-6A55-446C-A9E6-F0ECB69DFC54}.Release|Any CPU.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61F281DA-6A77-41BE-8225-7B5553B28F08} = {7BE7D569-8B6E-4EE5-BEBE-5FE2FD07B4F7}
+		{E337D131-10B1-4DC8-B8C7-61F3D3AA2804} = {7BE7D569-8B6E-4EE5-BEBE-5FE2FD07B4F7}
+		{C7C5334E-1FE0-4C52-AB6C-99D4B0074DF1} = {7BE7D569-8B6E-4EE5-BEBE-5FE2FD07B4F7}
+		{64A2F4F6-7364-4C8D-A71B-75DF1E5BBCAD} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{8B18E2BD-E633-43B2-BEB7-74EA0EC8D404} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{871093C3-1E75-4BED-8989-727B564EFDD4} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{908CD04A-3330-4EBE-8823-FFFD4809B4B9} = {7BE7D569-8B6E-4EE5-BEBE-5FE2FD07B4F7}
+		{4B4F2716-77CC-4430-BCD8-961BEE849ABF} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{4AC749AF-8E06-43E0-B815-BC1FF560BFC5} = {7BE7D569-8B6E-4EE5-BEBE-5FE2FD07B4F7}
+		{B74D84E4-E9B1-4087-8D8F-1793C12B6A03} = {7BE7D569-8B6E-4EE5-BEBE-5FE2FD07B4F7}
+		{0CBC7E65-3933-49F7-B4BC-B16B130D6E03} = {7BE7D569-8B6E-4EE5-BEBE-5FE2FD07B4F7}
+		{0FFE3579-CF57-46D2-897E-BC3C83C276D4} = {7BE7D569-8B6E-4EE5-BEBE-5FE2FD07B4F7}
+		{864FB438-E67F-4F4C-B0B3-77DBFF6AF160} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{58ADC8DE-C983-42AA-BAA6-22F5CDFAB501} = {7BE7D569-8B6E-4EE5-BEBE-5FE2FD07B4F7}
+		{D12CE1AC-43FD-46C2-B8D1-48909E785E32} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{005EF751-FDB2-4C73-87A8-4957D0F1873D} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{79A9F792-6756-4B61-BA7B-B0536EC69296} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{88DCE4C6-8704-40CE-AEA0-5B44EE4C94E2} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{7F1DFC61-8335-4163-88B9-BDD1BA19EF34} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{4E637F7C-7CCE-412F-B3AD-EDE6953D2096} = {E5989389-A1CA-419C-B067-66C3EF68FCED}
+		{721D652D-1204-4A45-B4EC-95379E10FC90} = {E5989389-A1CA-419C-B067-66C3EF68FCED}
+		{485B1576-60BE-4D53-8FAF-AE5B2DDD617A} = {321B4EEC-9AC0-43E5-A2B5-B7BAC6A5CB9C}
+		{953F8254-2DC3-471A-800B-5226155F76A2} = {E5989389-A1CA-419C-B067-66C3EF68FCED}
+		{15BA67A9-266E-4F73-8E93-EC37A35FF7EA} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{542AF718-A235-41B0-B844-5209CA47977D} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{3BA077B3-EBD7-461C-89AA-9E32755B431C} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{F82726A6-8CAC-41A6-9582-B096133569D5} = {E5989389-A1CA-419C-B067-66C3EF68FCED}
+		{2DB3DED2-CF01-4CD9-9A74-329A34DF120F} = {73A8027E-0703-4DD0-9D14-26D480EA2B49}
+		{AC667338-BBA9-40C6-B44C-CB5184FCAE58} = {E5989389-A1CA-419C-B067-66C3EF68FCED}
+		{B6956B15-6A55-446C-A9E6-F0ECB69DFC54} = {321B4EEC-9AC0-43E5-A2B5-B7BAC6A5CB9C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF90EB67-F818-45F3-B8C3-A4B58B68C90C}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 31
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/tfsmadison
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\Tf.CmApi.Common\\Tf.CmApi.Common.csproj
+		SccProjectTopLevelParentUniqueName1 = Tf.CmApi.sln
+		SccProjectName1 = src/Tf.CmApi.Common
+		SccLocalPath1 = src\\Tf.CmApi.Common
+		SccProjectUniqueName2 = src\\Tf.CmApi.DataProcessors\\Tf.CmApi.DataProcessors.csproj
+		SccProjectTopLevelParentUniqueName2 = Tf.CmApi.sln
+		SccProjectName2 = src/Tf.CmApi.DataProcessors
+		SccLocalPath2 = src\\Tf.CmApi.DataProcessors
+		SccProjectUniqueName3 = src\\Tf.CmApi.DeviceOverrides\\Tf.CmApi.DeviceOverrides.csproj
+		SccProjectTopLevelParentUniqueName3 = Tf.CmApi.sln
+		SccProjectName3 = src/Tf.CmApi.DeviceOverrides
+		SccLocalPath3 = src\\Tf.CmApi.DeviceOverrides
+		SccProjectUniqueName4 = src\\Tf.CmApi.Models\\Tf.CmApi.Models.csproj
+		SccProjectTopLevelParentUniqueName4 = Tf.CmApi.sln
+		SccProjectName4 = src/Tf.CmApi.Models
+		SccLocalPath4 = src\\Tf.CmApi.Models
+		SccProjectUniqueName5 = src\\Tf.CmApi.Plugins.NicoletUsb\\Tf.CmApi.Plugins.NicoletUsb.csproj
+		SccProjectTopLevelParentUniqueName5 = Tf.CmApi.sln
+		SccProjectName5 = src/Tf.CmApi.Plugins.NicoletUsb
+		SccLocalPath5 = src\\Tf.CmApi.Plugins.NicoletUsb
+		SccProjectUniqueName6 = src\\Tf.CmApi.Plugins.Simulator\\Tf.CmApi.Plugins.Simulator.csproj
+		SccProjectTopLevelParentUniqueName6 = Tf.CmApi.sln
+		SccProjectName6 = src/Tf.CmApi.Plugins.Simulator
+		SccLocalPath6 = src\\Tf.CmApi.Plugins.Simulator
+		SccProjectUniqueName7 = src\\Tf.CmApi.Usb.Common\\Tf.CmApi.Usb.Common.csproj
+		SccProjectTopLevelParentUniqueName7 = Tf.CmApi.sln
+		SccProjectName7 = src/Tf.CmApi.Usb.Common
+		SccLocalPath7 = src\\Tf.CmApi.Usb.Common
+		SccProjectUniqueName8 = src\\Tf.CmApi.Usb.Win\\Tf.CmApi.Usb.Win.csproj
+		SccProjectTopLevelParentUniqueName8 = Tf.CmApi.sln
+		SccProjectName8 = src/Tf.CmApi.Usb.Win
+		SccLocalPath8 = src\\Tf.CmApi.Usb.Win
+		SccProjectUniqueName9 = src\\Tf.CmApi\\Tf.CmApi.csproj
+		SccProjectTopLevelParentUniqueName9 = Tf.CmApi.sln
+		SccProjectName9 = src/Tf.CmApi
+		SccLocalPath9 = src\\Tf.CmApi
+		SccProjectUniqueName10 = test\\Tf.CmApi.Common.Test\\Tf.CmApi.Common.Test.csproj
+		SccProjectTopLevelParentUniqueName10 = Tf.CmApi.sln
+		SccProjectName10 = test/Tf.CmApi.Common.Test
+		SccLocalPath10 = test\\Tf.CmApi.Common.Test
+		SccProjectUniqueName11 = test\\Tf.CmApi.Integration\\Tf.CmApi.Integration.csproj
+		SccProjectTopLevelParentUniqueName11 = Tf.CmApi.sln
+		SccProjectName11 = test/Tf.CmApi.Integration
+		SccLocalPath11 = test\\Tf.CmApi.Integration
+		SccProjectUniqueName12 = test\\Tf.CmApi.Plugins.NicoletUsb.Test\\Tf.CmApi.Plugins.NicoletUsb.Test.csproj
+		SccProjectTopLevelParentUniqueName12 = Tf.CmApi.sln
+		SccProjectName12 = test/Tf.CmApi.Plugins.NicoletUsb.Test
+		SccLocalPath12 = test\\Tf.CmApi.Plugins.NicoletUsb.Test
+		SccProjectUniqueName13 = test\\Tf.CmApi.Plugins.Simulator.Test\\Tf.CmApi.Plugins.Simulator.Test.csproj
+		SccProjectTopLevelParentUniqueName13 = Tf.CmApi.sln
+		SccProjectName13 = test/Tf.CmApi.Plugins.Simulator.Test
+		SccLocalPath13 = test\\Tf.CmApi.Plugins.Simulator.Test
+		SccProjectUniqueName14 = test\\Tf.CmApi.SimpleSample\\Tf.CmApi.SimpleSample.csproj
+		SccProjectTopLevelParentUniqueName14 = Tf.CmApi.sln
+		SccProjectName14 = test/Tf.CmApi.SimpleSample
+		SccLocalPath14 = test\\Tf.CmApi.SimpleSample
+		SccProjectUniqueName15 = test\\Tf.CmApi.SimpleSampleRef\\Tf.CmApi.SimpleSampleRef.csproj
+		SccProjectTopLevelParentUniqueName15 = Tf.CmApi.sln
+		SccProjectName15 = test/Tf.CmApi.SimpleSampleRef
+		SccLocalPath15 = test\\Tf.CmApi.SimpleSampleRef
+		SccProjectUniqueName16 = test\\Tf.CmApi.Test\\Tf.CmApi.Test.csproj
+		SccProjectTopLevelParentUniqueName16 = Tf.CmApi.sln
+		SccProjectName16 = test/Tf.CmApi.Test
+		SccLocalPath16 = test\\Tf.CmApi.Test
+		SccProjectUniqueName17 = test\\Tf.CmApi.Usb.Win.Test\\Tf.CmApi.Usb.Win.Test.csproj
+		SccProjectTopLevelParentUniqueName17 = Tf.CmApi.sln
+		SccProjectName17 = test/Tf.CmApi.Usb.Win.Test
+		SccLocalPath17 = test\\Tf.CmApi.Usb.Win.Test
+		SccProjectUniqueName18 = test\\Tf.CmApi.SimpleSampleRef_LegacyFramework\\Tf.CmApi.SimpleSampleRef_LegacyFramework.csproj
+		SccProjectTopLevelParentUniqueName18 = Tf.CmApi.sln
+		SccProjectName18 = test/Tf.CmApi.SimpleSampleRef_LegacyFramework
+		SccLocalPath18 = test\\Tf.CmApi.SimpleSampleRef_LegacyFramework
+		SccProjectUniqueName19 = test\\Tf.CmApi.Test.Utilities\\Tf.CmApi.Test.Utilities.csproj
+		SccProjectTopLevelParentUniqueName19 = Tf.CmApi.sln
+		SccProjectName19 = test/Tf.CmApi.Test.Utilities
+		SccLocalPath19 = test\\Tf.CmApi.Test.Utilities
+		SccProjectUniqueName20 = Tools\\Tf.CmApi.DownloadFirmware\\Tf.CmApi.DownloadFirmware.csproj
+		SccProjectTopLevelParentUniqueName20 = Tf.CmApi.sln
+		SccProjectName20 = Tools/Tf.CmApi.DownloadFirmware
+		SccLocalPath20 = Tools\\Tf.CmApi.DownloadFirmware
+		SccProjectUniqueName21 = Tools\\RebootThermoInstrumentOBC\\RebootThermoInstrumentOBC.csproj
+		SccProjectTopLevelParentUniqueName21 = Tf.CmApi.sln
+		SccProjectName21 = Tools/RebootThermoInstrumentOBC
+		SccLocalPath21 = Tools\\RebootThermoInstrumentOBC
+		SccProjectUniqueName22 = Installers\\OBC\u0020Utilities\u0020Installer\\OBC\u0020Utilities\u0020Installer.wixproj
+		SccProjectTopLevelParentUniqueName22 = Tf.CmApi.sln
+		SccProjectName22 = Installers/OBC\u0020Utilities\u0020Installer
+		SccLocalPath22 = Installers\\OBC\u0020Utilities\u0020Installer
+		SccProjectUniqueName23 = Tools\\SetIrSourceDAC\\SetIrSourceDAC.csproj
+		SccProjectTopLevelParentUniqueName23 = Tf.CmApi.sln
+		SccProjectName23 = Tools/SetIrSourceDAC
+		SccLocalPath23 = Tools\\SetIrSourceDAC
+		SccProjectUniqueName24 = test\\Tf.CmApi.DataProcessors.Test\\Tf.CmApi.DataProcessors.Test.csproj
+		SccProjectTopLevelParentUniqueName24 = Tf.CmApi.sln
+		SccProjectName24 = test/Tf.CmApi.DataProcessors.Test
+		SccLocalPath24 = test\\Tf.CmApi.DataProcessors.Test
+		SccProjectUniqueName25 = test\\Tf.CmApi.DeviceOverrides.Test\\Tf.CmApi.DeviceOverrides.Test.csproj
+		SccProjectTopLevelParentUniqueName25 = Tf.CmApi.sln
+		SccProjectName25 = test/Tf.CmApi.DeviceOverrides.Test
+		SccLocalPath25 = test\\Tf.CmApi.DeviceOverrides.Test
+		SccProjectUniqueName26 = test\\Tf.CmApi.Usb.Common.Test\\Tf.CmApi.Usb.Common.Test.csproj
+		SccProjectTopLevelParentUniqueName26 = Tf.CmApi.sln
+		SccProjectName26 = test/Tf.CmApi.Usb.Common.Test
+		SccLocalPath26 = test\\Tf.CmApi.Usb.Common.Test
+		SccProjectUniqueName27 = Tools\\SaveDataForSimulator\\SaveDataForSimulator.csproj
+		SccProjectTopLevelParentUniqueName27 = Tf.CmApi.sln
+		SccProjectName27 = Tools/SaveDataForSimulator
+		SccLocalPath27 = Tools\\SaveDataForSimulator
+		SccProjectUniqueName28 = test\\Tf.CmApi.TestEventRing\\Tf.CmApi.TestEventRing.csproj
+		SccProjectTopLevelParentUniqueName28 = Tf.CmApi.sln
+		SccProjectName28 = test/Tf.CmApi.TestEventRing
+		SccLocalPath28 = test\\Tf.CmApi.TestEventRing
+		SccProjectUniqueName29 = Tools\\PostBIM\\PostBIM.csproj
+		SccProjectTopLevelParentUniqueName29 = Tf.CmApi.sln
+		SccProjectName29 = Tools/PostBIM
+		SccLocalPath29 = Tools\\PostBIM
+		SccProjectUniqueName30 = Installers\\SimulatorData\\SimulatorData.wixproj
+		SccProjectTopLevelParentUniqueName30 = Tf.CmApi.sln
+		SccProjectName30 = Installers/SimulatorData
+		SccLocalPath30 = Installers\\SimulatorData
+	EndGlobalSection
+EndGlobal

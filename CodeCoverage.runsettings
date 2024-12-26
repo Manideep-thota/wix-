@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- File name extension must be .runsettings -->
+<RunSettings>
+  <NUnit>
+    <DefaultTestNamePattern>{c}.{m}{a}</DefaultTestNamePattern>
+    <PreFilter>true</PreFilter>
+  </NUnit>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat code coverage">
+        <Configuration>
+          <ExcludeByAttribute>Obsolete,GeneratedCodeAttribute,CompilerGeneratedAttribute,ExcludeFromCodeCoverage,TestFixture</ExcludeByAttribute>
+          <Exclude>[*]*.Logging.*</Exclude>
+          <Format>cobertura</Format>
+          <UseSourceLink>true</UseSourceLink>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>
